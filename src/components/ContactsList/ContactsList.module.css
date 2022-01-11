@@ -1,0 +1,37 @@
+.item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.item::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-15px, 7px);
+}
+
+.deleteBtn {
+  font-weight: 600;
+  color: rgb(44, 43, 43);
+  width: 75px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: color 200ms linear;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+  background-color: rgb(4, 36, 143);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
